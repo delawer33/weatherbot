@@ -3,7 +3,9 @@ from geopy.geocoders import Nominatim
 from parser_file import *
 from cities import check_city
 import emoji
-TOKEN = "***REMOVED***"
+import os
+
+TOKEN = os.getenv("BOT_TOKEN")
 
 geolocator = Nominatim(user_agent="GetLoc")
 
